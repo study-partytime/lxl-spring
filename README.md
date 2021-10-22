@@ -12,7 +12,7 @@
 
 - 使现有的技术更容易使用，本身是一个大杂烩，整合了现有的技术框架
 
-## .12相关
+## 1.2相关
 
 官网：https://spring.io/projects/spring-framework#overview
 
