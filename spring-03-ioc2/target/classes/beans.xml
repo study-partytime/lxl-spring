@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="user" class="com.dida.pojo.user">-->
+<!--        <property name="name" value="dida"/>-->
+<!--    </bean>-->
+
+<!--调用有参构造的三种方法-->
+
+<!--    <bean id="user" class="com.dida.pojo.user">-->
+<!--        <constructor-arg index="0" value="dida"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="user" class="com.dida.pojo.user">-->
+<!--        <constructor-arg type="java.lang.String" value="lalala"/>-->
+<!--    </bean>-->
+
+    <bean id="user" class="com.dida.pojo.user">
+        <constructor-arg name="name" value="ybbbbb"/>
+    </bean>
+
+</beans>

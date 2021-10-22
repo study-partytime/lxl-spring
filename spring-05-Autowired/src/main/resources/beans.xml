@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean id="cat" class="com.dida.pojo.Cat"/>
+    <bean id="dog" class="com.dida.pojo.Dog"/>
+
+
+<!--通过配置文件实现自动注入-->
+
+<!--autowire:
+byName :通过名字自动装配 在容器上下文中查找set方法对应的值后面的名字
+byType : 通过类型自动装配
+-->
+    <bean id="people" class="com.dida.pojo.People" autowire="byName">
+        <property name="name" value="滴答"/>
+    </bean>
+
+    </beans>

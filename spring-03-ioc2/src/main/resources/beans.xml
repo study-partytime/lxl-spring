@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="user" class="com.dida.pojo.user">-->
+<!--        <property name="name" value="dida"/>-->
+<!--    </bean>-->
+
+<!--调用有参构造的三种方法-->
+
+<!--通过下标的方式来实现有参构造-->
+
+<!--    <bean id="user" class="com.dida.pojo.user">-->
+<!--        <constructor-arg index="0" value="dida"/>-->
+<!--    </bean>-->
+
+<!--通过指定参数的类型-->
+
+<!--    <bean id="user" class="com.dida.pojo.user">-->
+<!--        <constructor-arg type="java.lang.String" value="lalala"/>-->
+<!--    </bean>-->
+
+<!--通过传入参数的名字-->
+<!--name也是别名,可以起多个别名-->
+    <bean id="user" class="com.dida.pojo.user" name="user3,user4">
+        <constructor-arg name="name" value="ybbbbb"/>
+    </bean>
+
+<!--别名，如果添加了别名可以使用别名获取对象-->
+    <alias name="user" alias="user2"/>
+</beans>
